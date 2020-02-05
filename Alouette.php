@@ -6,6 +6,9 @@ class Alouette {
 	 * @param string $qualite - La qualité que l'on donne à l'oiseau (gentille)
 	 * @return string
 	 */
+	public static function titre($oiseau='', $qualite=''){
+		
+	}
 
 
 	/** Méthode chanson
@@ -76,11 +79,17 @@ class Alouette {
 	
 	/** Méthode actionMembre
 	 * Génère la menace faite à l'oiseau sur son membre.
+	 * 
 	 * @param string $action - L'action
 	 * @param string $membre - Le membre
 	 * @uses appelReponse
 	 * @return string
 	 */
-
-
+	public static function actionMembre($action='', $membre='')
+	{
+		$affichage = '';
+		$affichage .='<div class="appel">Je te '.$action.' '.$membre.'</div>';
+		$affichage .='<div class="reponse">Je te '.$action.' '.$membre.'</div>';
+		return $affichage;
+	}
 }
